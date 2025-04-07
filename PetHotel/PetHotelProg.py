@@ -2004,8 +2004,6 @@ def settings():
         system_font = font
         font_size = size
         apply_style(settingsMenuW)
-        settingsMenuW.geometry("500x600")
-        settingsMenuW.minsize(500, 600)
 
     # Functions to change colours, which are saved to different globals but make use of the same colour chooser.
     def choose_progcolour():
@@ -2013,24 +2011,18 @@ def settings():
         colour = colorchooser.askcolor(title = "Choose colour")[1]
         prog_colour = colour
         apply_style(settingsMenuW)
-        settingsMenuW.geometry("500x600")
-        settingsMenuW.minsize(500, 600)
 
     def choose_bgcolour():
         global bg_colour
         colour = colorchooser.askcolor(title = "Choose colour")[1]
         bg_colour = colour
         apply_style(settingsMenuW)
-        settingsMenuW.geometry("500x600")
-        settingsMenuW.minsize(500, 600)
 
     def choose_txtcolour():
         global txt_colour
         colour = colorchooser.askcolor(title = "Choose colour")[1]
         txt_colour = colour
         apply_style(settingsMenuW)
-        settingsMenuW.geometry("500x600")
-        settingsMenuW.minsize(500, 600)
     
     # This is used to change the password, and is only available to owners from the hidden button.
     def passwChange():          
